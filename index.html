@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProTemplateHQ Shop Manager</title>
+<style>
+  :root { --bg: #fafaf8; --text: #1f2328; --muted: #59636e; --line: #d8dee4; --accent: #2f6f5e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181b; --text: #e6e8eb; --muted: #9aa4ae; --line: #30363d; --accent: #6fc2a8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ProTemplateHQ Shop Manager</h1>
+  <p class="sub">A private, self-hosted tool for managing my own Etsy shops.</p>
+
+  <h2>About the project</h2>
+  <p>I run a small print-on-demand and digital pattern business on Etsy. This tool runs on my own computer and helps me keep the listings in my own shops organized and up to date. It is not a public app, it is not sold, and it is not offered to other sellers.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Creates and edits listings in my own shops: title, tags, description and attributes.</li>
+    <li>Uploads listing images and videos that I produce for my products.</li>
+    <li>Organizes listings into shop sections.</li>
+    <li>Reads my own shop's listings and orders for bookkeeping and profit tracking.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It does not access other sellers' shops or data.</li>
+    <li>It does not need or request commercial API access.</li>
+    <li>It does not share or sell any data. Order data stays on my own computer and is used only for my own accounting.</li>
+  </ul>
+
+  <h2>Technology</h2>
+  <p>Node.js and Express running locally, using the official Etsy Open API v3 with OAuth 2.0 (PKCE). Requests are rate-limited to stay within Etsy's API limits.</p>
+
+  <h2>Contact</h2>
+  <p>GitHub: <a href="https://github.com/Ibrahim3223">github.com/Ibrahim3223</a></p>
+
+  <footer>The term "Etsy" is a trademark of Etsy, Inc. This application uses the Etsy API but is not endorsed or certified by Etsy, Inc.</footer>
+</main>
+</body>
+</html>
